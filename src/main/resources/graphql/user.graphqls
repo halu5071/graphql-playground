@@ -1,0 +1,10 @@
+type User {
+    id: ID!
+    name: String!
+    iconUrl: String!
+}
+
+type Query {
+    getUserById(id: ID!) : User
+    getUsers: [User]!
+}
